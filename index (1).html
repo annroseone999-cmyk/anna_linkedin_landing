@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Ганна Андрусенко — LinkedIn-стратег. Упаковка профілю, контент-стратегія та воронки для EdTech, експертів і тих, хто шукає роботу.">
+<meta property="og:title" content="Ганна Андрусенко — LinkedIn-стратег">
+<meta property="og:description" content="LinkedIn, який приводить клієнтів. Кейси, пакети послуг і контакти.">
+<meta property="og:image" content="portrait.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a66c2'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'%3Ein%3C/text%3E%3C/svg%3E">
+<title>Ганна Андрусенко</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap">
+<style>
+/* Layout: airy white editorial page, soft LinkedIn-blue light pools behind the portrait, one saturated blue band, black footer */
+:root{
+  --bg:#ffffff; --bg-soft:#f3f6fb; --ink:#0b1426; --muted:#5b6679; --line:#e3e8f0;
+  --blue:#0a66c2; --blue-deep:#06386e; --sky:#8ccaff; --lilac:#c3b5ff; --mint:#bdf0ea;
+  --card:#ffffff; --foot:#05080f; --foot-ink:#eef2f8;
+  --display:"Onest",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --accent-serif:"Cormorant Garamond","Georgia","Times New Roman",serif;
+  --body:"Onest",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#070b14; --bg-soft:#0d1422; --ink:#eef2f8; --muted:#9aa6ba; --line:#1c2638;
+  --blue:#3d8fe6; --blue-deep:#0a3f7a; --sky:#1b5fa8; --lilac:#4a3c9a; --mint:#11524c;
+  --card:#0d1422; --foot:#020409; --foot-ink:#eef2f8; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#070b14; --bg-soft:#0d1422; --ink:#eef2f8; --muted:#9aa6ba; --line:#1c2638;
+  --blue:#3d8fe6; --blue-deep:#0a3f7a; --sky:#1b5fa8; --lilac:#4a3c9a; --mint:#11524c;
+  --card:#0d1422; --foot:#020409; --foot-ink:#eef2f8; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{margin:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.035em;line-height:1.02;margin:0;text-wrap:balance}
+em,.it{font-family:var(--accent-serif);font-style:italic;font-weight:500;letter-spacing:-.01em}
+.eyebrow{font-family:var(--accent-serif);font-style:italic;font-size:1.3rem;color:var(--muted);margin:0}
+p{margin:0}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
+
+/* nav */
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+nav.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px}
+.logo{font-weight:700;text-decoration:none;display:flex;align-items:center;gap:8px;font-size:1rem}
+.logo i{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:5px;background:var(--blue);color:#fff;font-style:normal;font-size:.8rem;font-weight:700}
+.navlinks{display:flex;gap:26px;font-size:.88rem}
+.navlinks a{text-decoration:none;color:var(--muted)}
+.navlinks a:hover{color:var(--ink)}
+.pill{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--ink);border-radius:999px;padding:10px 20px;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s}
+.pill:hover{background:var(--ink);color:var(--bg)}
+.pill.solid{background:var(--blue);border-color:var(--blue);color:#fff}
+.pill.solid:hover{background:var(--blue-deep);border-color:var(--blue-deep)}
+.pill svg{width:14px;height:14px}
+@media (max-width:820px){.navlinks{display:none}}
+
+/* hero */
+.hero{overflow-x:clip;position:relative;text-align:center;padding-top:clamp(40px,7vw,80px)}
+.hero h1{font-size:clamp(2.6rem,7.2vw,5.6rem);margin-top:14px}
+.hero h1 em{font-weight:500;font-size:1.08em;color:var(--blue)}
+.hero .lead{max-width:560px;margin:22px auto 0;color:var(--muted);font-size:1.05rem}
+.hero .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.stage{position:relative;max-width:760px;margin:30px auto 0;height:clamp(380px,52vw,580px)}
+.glow{position:absolute;inset:18% -30% -5%;pointer-events:none;filter:blur(60px);opacity:.95;
+  background:
+   radial-gradient(40% 45% at 30% 55%,var(--sky),transparent 70%),
+   radial-gradient(38% 40% at 70% 48%,var(--lilac),transparent 70%),
+   radial-gradient(30% 35% at 52% 75%,var(--blue),transparent 70%),
+   radial-gradient(30% 30% at 85% 75%,var(--mint),transparent 70%)}
+.portrait{position:absolute;left:50%;top:6%;transform:translateX(-50%);width:min(380px,64%);aspect-ratio:4/5;border-radius:999px 999px 28px 28px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(6,56,110,.55);border:6px solid var(--card)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.chip{position:absolute;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px;text-align:left;box-shadow:0 12px 30px -12px rgba(10,40,90,.28);font-size:.78rem;color:var(--muted);line-height:1.3;animation:float 6s ease-in-out infinite}
+.chip b{display:block;font-size:1.15rem;color:var(--ink);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.chip .li{display:inline-grid;place-items:center;width:16px;height:16px;border-radius:3px;background:var(--blue);color:#fff;font-size:.6rem;font-weight:700;margin-right:6px;vertical-align:1px}
+.c1{left:2%;top:26%}.c2{right:0;top:40%;animation-delay:-2s}.c3{left:6%;bottom:14%;animation-delay:-4s}
+@keyframes float{50%{transform:translateY(-8px)}}
+@media (max-width:620px){.stage{height:390px}.portrait{width:70%}.chip{font-size:.7rem;padding:8px 10px}.chip b{font-size:.95rem}.c1{left:0;top:18%}.c2{right:0;top:44%}.c3{left:0;bottom:8%}}
+
+/* intro */
+section{padding-block:clamp(70px,10vw,130px)}
+.intro{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end}
+.intro h2{font-size:clamp(2.2rem,5.4vw,4.4rem)}
+.intro p{font-size:1.15rem;line-height:1.55;max-width:34ch}
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:70px}
+.who h3{font-size:1.05rem;letter-spacing:-.01em;font-weight:600;margin-bottom:8px}
+.who p{color:var(--muted);font-size:.94rem}
+.who .k{font-family:var(--accent-serif);font-style:italic;color:var(--blue);font-size:1.15rem;display:block;margin-bottom:10px}
+@media (max-width:820px){.intro,.who{grid-template-columns:1fr}.who{gap:28px;margin-top:48px}}
+
+/* cases */
+.cases{background:var(--bg-soft)}
+.sechead{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:50px}
+.sechead h2{font-size:clamp(2.2rem,5vw,4rem)}
+.sechead p{max-width:34ch;color:var(--muted)}
+.case{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(28px,5vw,64px);align-items:start;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:clamp(20px,4vw,44px)}
+.shot{border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 60px -30px rgba(10,40,90,.35)}
+.client{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+.tag{background:color-mix(in srgb,var(--blue) 12%,transparent);color:var(--blue);border-radius:999px;padding:4px 10px;letter-spacing:.04em}
+.case h3{font-size:clamp(1.7rem,3vw,2.4rem);margin:16px 0 10px}
+.case .sub{color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:22px 18px;margin-top:28px}
+.stat b{display:block;white-space:nowrap;font-family:var(--display);font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:600;letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
+.stat span{font-size:.86rem;color:var(--muted)}
+.stat b.blue{color:var(--blue)}
+.minor{margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}
+.minor h4{margin:0 0 4px;font-size:1rem}
+.minor .row{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:.9rem;color:var(--muted)}
+.minor .row b{color:var(--ink);font-variant-numeric:tabular-nums}
+.compare{margin-top:30px;padding:22px;border-radius:18px;background:var(--bg-soft)}
+.compare h4{margin:0 0 4px;font-size:1rem}
+.compare p{font-size:.9rem;color:var(--muted);margin-bottom:16px}
+.bar{display:grid;grid-template-columns:92px 1fr 48px;align-items:center;gap:12px;font-size:.88rem;margin-top:10px}
+.bar .track{height:12px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar .fill{height:100%;border-radius:99px;background:var(--muted)}
+.bar.li .fill{background:var(--blue)}
+.bar .v{font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+.bar.li .v{color:var(--blue)}
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:24px}
+.duo .case{grid-template-columns:1fr;grid-template-rows:auto 1fr;align-content:start}
+.duo .shot{aspect-ratio:4/3;max-width:100%;background:var(--bg-soft)}
+.duo .shot img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.case>.shot img{width:100%}
+.duo .stats{grid-template-columns:repeat(2,1fr)}
+@media (max-width:900px){.case,.duo{grid-template-columns:1fr}.duo .stats{grid-template-columns:repeat(2,1fr)}}
+
+/* speaker band */
+.band{background:linear-gradient(115deg,#04224a 0%,#0a66c2 48%,#6aa9ff 78%,#b7a6ff 100%);color:#fff;padding-block:0;overflow:hidden}
+.band .wrap{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px}
+.band .txt{padding-block:clamp(60px,8vw,100px)}
+.band .eyebrow{color:rgba(255,255,255,.8)}
+.band h2{font-size:clamp(2.2rem,5vw,4rem);margin-top:12px}
+.band p.d{margin-top:20px;max-width:40ch;color:rgba(255,255,255,.86)}
+.band .pill{border-color:#fff;color:#fff;margin-top:30px}
+.band .pill:hover{background:#fff;color:#0a3f7a}
+.band .ph{align-self:end;justify-self:center;width:100%;max-width:420px;margin-top:40px;aspect-ratio:3/4;border-radius:22px 22px 0 0;overflow:hidden;box-shadow:0 -20px 60px -20px rgba(0,0,0,.45)}
+.band .ph img{width:100%;height:100%;object-fit:cover;object-position:40% 50%}
+@media (max-width:820px){.band .wrap{grid-template-columns:1fr}.band .txt{padding-bottom:0}.band .ph{max-width:320px}}
+
+/* services */
+.plans{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.plan{border:1px solid var(--line);border-radius:22px;padding:26px 22px;display:flex;flex-direction:column;gap:16px;background:var(--card);position:relative}
+.plan .n{font-family:var(--accent-serif);font-style:italic;color:var(--blue);font-size:1.25rem}
+.plan h3{font-size:1.15rem;letter-spacing:-.01em;text-transform:uppercase}
+.plan .for{color:var(--muted);font-size:.88rem;line-height:1.45;min-height:3.9em}
+.price{font-family:var(--display);font-weight:600;font-size:2.6rem;letter-spacing:-.04em;line-height:1}
+.price small{font-size:.9rem;color:var(--muted);font-weight:500;letter-spacing:0}
+.plan ul{list-style:none;padding:0;margin:0;display:grid;gap:9px;font-size:.88rem}
+.plan li{padding-left:22px;position:relative;line-height:1.4}
+.plan li::before{content:"";position:absolute;left:0;top:.35em;width:12px;height:7px;border-left:2px solid var(--blue);border-bottom:2px solid var(--blue);transform:rotate(-45deg)}
+.plan li.inc{color:var(--muted);font-style:normal}
+.plan li.inc::before{border-color:var(--muted)}
+.plan .res{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);font-size:.84rem;color:var(--muted)}
+.plan .res b{color:var(--ink);font-weight:600}
+.plan.rec{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.plan.rec .for,.plan.rec .res,.plan.rec .price small,.plan.rec li.inc{color:color-mix(in srgb,var(--bg) 65%,var(--ink))}
+.plan.rec .res{border-color:color-mix(in srgb,var(--bg) 20%,var(--ink))}
+.plan.rec .res b{color:var(--bg)}
+.plan.rec .n{color:var(--sky)}
+.plan.rec li::before{border-color:var(--sky)}
+.badge{position:absolute;top:-12px;right:18px;background:var(--blue);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:99px}
+@media (max-width:1040px){.plans{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.plans{grid-template-columns:1fr}.plan .for{min-height:0}}
+.how{display:grid;grid-template-columns:repeat(3,1fr) 1.1fr;gap:26px;margin-top:56px;padding-top:36px;border-top:1px solid var(--line)}
+.how div{font-size:.92rem;color:var(--muted)}
+.how b{display:block;color:var(--ink);font-size:1rem;margin-bottom:4px}
+.how .free{display:inline-block;margin-left:6px;background:color-mix(in srgb,var(--blue) 12%,transparent);color:var(--blue);border-radius:99px;padding:1px 8px;font-size:.7rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;vertical-align:2px}
+.how .st{font-family:var(--accent-serif);font-style:italic;color:var(--blue);font-size:1.15rem}
+.pay{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.pay span{border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:.8rem;color:var(--ink)}
+@media (max-width:820px){.how{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.how{grid-template-columns:1fr}}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(30px,6vw,80px);align-items:start}
+.about h2{font-size:clamp(2.2rem,5vw,4rem)}
+.about .body{display:grid;gap:18px;font-size:1.08rem}
+.about .body p{color:var(--muted)}
+.about .body p strong{color:var(--ink);font-weight:600}
+.langs{display:flex;flex-wrap:wrap;gap:8px}
+.langs span{background:var(--bg-soft);border-radius:99px;padding:6px 14px;font-size:.85rem}
+@media (max-width:820px){.about{grid-template-columns:1fr}}
+
+/* footer / contact */
+footer{background:var(--foot);color:var(--foot-ink);overflow:hidden;padding-top:clamp(70px,9vw,110px)}
+footer .eyebrow{color:#9aa6ba}
+footer h2{font-size:clamp(2.4rem,6vw,5rem);margin-top:12px}
+footer h2 em{color:#8ccaff}
+.contacts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:48px}
+.contact{display:flex;align-items:center;justify-content:space-between;gap:14px;border:1px solid #1f2a3e;border-radius:20px;padding:22px 24px;text-decoration:none;transition:background .2s,border-color .2s}
+.contact:hover{background:#0d1626;border-color:#3d8fe6}
+.contact .l{display:flex;align-items:center;gap:14px;min-width:0}
+.contact .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;flex:none}
+.contact .ic svg{width:22px;height:22px;fill:#fff}
+.contact .nm{font-weight:600}
+.contact .hd{font-size:.85rem;color:#9aa6ba;overflow-wrap:anywhere}
+.contact .ar{width:18px;height:18px;flex:none;stroke:#9aa6ba}
+.tg{background:#229ed9}.ig{background:linear-gradient(135deg,#f9a03f,#e1306c 55%,#833ab4)}.lk{background:#0a66c2}
+@media (max-width:820px){.contacts{grid-template-columns:1fr}}
+.fbot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:70px;font-size:.8rem;color:#6b768a}
+.huge{font-family:var(--display);font-weight:700;letter-spacing:-.06em;line-height:.78;font-size:clamp(5rem,21vw,17rem);color:#111a2b;margin-top:30px;white-space:nowrap;user-select:none}
+
+@media (prefers-reduced-motion:reduce){.chip{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav class="top" aria-label="Головна навігація">
+  <div class="wrap">
+    <a class="logo" href="#top"><i>in</i>Ганна Андрусенко</a>
+    <div class="navlinks">
+      <a href="#cases">Кейси</a><a href="#services">Послуги</a><a href="#about">Про мене</a><a href="#contact">Контакти</a>
+    </div>
+    <a class="pill" href="#contact">Записатись <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">LinkedIn-стратег · 5+ років у контенті</p>
+    <h1>LinkedIn, який<br><em>приводить клієнтів</em></h1>
+    <p class="lead">Упаковую профіль, будую контент-стратегію та воронки, щоб тебе знаходили, читали й писали першими. Для EdTech-проєктів, експертів і тих, хто шукає роботу.</p>
+    <div class="ctas">
+      <a class="pill solid" href="#services">Обрати пакет <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+      <a class="pill" href="#cases">Дивитись кейси</a>
+    </div>
+    <div class="stage">
+      <div class="glow"></div>
+      <div class="portrait"><img src="portrait.webp" alt="Ганна Андрусенко, LinkedIn-стратег" width="800" height="1000"></div>
+      <div class="chip c1"><span class="li">in</span>Один пост клієнта<b>188 579 показів</b></div>
+      <div class="chip c2">За пів року постингу<b>+5 000 підписників</b></div>
+      <div class="chip c3">Пошук роботи<b>Офер за 4 тижні</b></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="intro">
+      <h2>Профіль, контент і воронка, <em>які працюють разом</em></h2>
+      <p>LinkedIn не про красиву стрічку. Це канал довіри, з якого приходять заявки, клієнти та офери. Я вибудовую його так, щоб він працював і без постійного ручного запуску.</p>
+    </div>
+    <div class="who">
+      <div><span class="k">EdTech-проєкти та школи</span><h3>Заявки на навчання з LinkedIn</h3><p>Особистий бренд фаундера як канал довіри. Люди самі реєструються на вебінари і приходять теплішими, ніж з реклами.</p></div>
+      <div><span class="k">Експерти</span><h3>Особистий бренд, який знаходять</h3><p>Позиціонування, упаковка профілю та контент, після якого тобі пишуть із запитом, а не просто ставлять лайк.</p></div>
+      <div><span class="k">Ті, хто шукає роботу</span><h3>Профіль, який помічають рекрутери</h3><p>Headline, about і досвід, оформлені під посаду, яку ти хочеш, з ключовими словами, за якими тебе знаходять рекрутери.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cases" id="cases">
+  <div class="wrap">
+    <div class="sechead">
+      <div><p class="eyebrow">Результати клієнтів</p><h2>Цифри, а не <em>обіцянки</em></h2></div>
+      <p>Реальні скріни та результати з профілів, з якими я працюю.</p>
+    </div>
+
+    <article class="case">
+      <div class="shot"><img src="post.webp" alt="Пост Сергія Хромченка в LinkedIn: 188 579 показів, 1 469 реакцій" width="900" height="963"></div>
+      <div>
+        <div class="client"><span>Codemify · Сергій Хромченко, CEO &amp; Founder</span><span class="tag">2+ роки співпраці</span></div>
+        <h3>Один пост приніс <em>$10K+</em></h3>
+        <p class="sub">Особистий бренд фаундера американської IT-школи. LinkedIn став стабільним джерелом заявок.</p>
+        <div class="stats">
+          <div class="stat"><b class="blue">$10K+</b><span>доходу з одного поста</span></div>
+          <div class="stat"><b>20+</b><span>дзвінків через Calendly з цього поста</span></div>
+          <div class="stat"><b>+300%</b><span>охоплення</span></div>
+          <div class="stat"><b>+5 000</b><span>підписників за пів року активного постингу</span></div>
+        </div>
+        <div class="minor">
+          <h4>Пост «Dear Junior QAs»</h4>
+          <div class="row"><span><b>148 000</b> охоплення</span><span><b>+394</b> підписники</span><span><b>10+</b> дзвінків</span><span>середній чек <b>$2 000+</b></span></div>
+        </div>
+        <div class="compare">
+          <h4>Вебінари запускаються самі</h4>
+          <p>Люди з LinkedIn реєструються без окремого запуску і приходять теплішими, ніж з реклами.</p>
+          <div class="bar"><span>Реклама</span><div class="track"><div class="fill" style="width:10%"></div></div><span class="v">~10%</span></div>
+          <div class="bar li"><span>LinkedIn</span><div class="track"><div class="fill" style="width:40%"></div></div><span class="v">~40%</span></div>
+          <p style="margin:12px 0 0;font-size:.8rem">Явка зареєстрованих на вебінар</p>
+        </div>
+      </div>
+    </article>
+
+    <div class="duo">
+      <article class="case">
+        <div class="shot"><img src="uprali.webp" alt="Профіль Aly Owens у LinkedIn після упаковки" width="690" height="561"></div>
+        <div>
+          <div class="client"><span>Uprali · Aly Owens, Co-founder &amp; CPO</span></div>
+          <h3>Профіль з нуля і воронка, що <em>працює далі</em></h3>
+          <p class="sub">3 місяці співпраці. Налаштували аудиторію й автоматизовану вебінарну воронку, яка працює і після завершення проєкту.</p>
+          <div class="stats">
+            <div class="stat"><b class="blue">+1 000</b><span>підписників за 3 місяці</span></div>
+            <div class="stat"><b>+80%</b><span>охоплення</span></div>
+            <div class="stat"><b>+80%</b><span>запитів на навчання в особисті</span></div>
+          </div>
+        </div>
+      </article>
+      <article class="case">
+        <div class="shot"><img src="job.webp" alt="Клієнт, Senior Web Developer, після оновлення профілю" width="660" height="897"></div>
+        <div>
+          <div class="client"><span>Пошук роботи · Senior Web Developer</span></div>
+          <h3>Оновлений профіль і <em>офер за 4 тижні</em></h3>
+          <p class="sub">Консультація та переупаковка профілю під цільову посаду.</p>
+          <div class="stats">
+            <div class="stat"><b class="blue">4 тижні</b><span>від оновлення профілю до оферу</span></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="txt">
+      <p class="eyebrow">Спікерка</p>
+      <h2>Розповідаю про LinkedIn <em>зі сцени</em></h2>
+      <p class="d">Мене запрошують з лекціями про LinkedIn: як заповнити профіль, щоб він продавав, і як вести контент без вигорання. Можу провести лекцію або воркшоп для вашої команди чи ком'юніті.</p>
+      <a class="pill" href="#contact">Запросити на лекцію</a>
+    </div>
+    <div class="ph"><img src="talk.webp" alt="Ганна виступає з лекцією про LinkedIn" width="978" height="1292"></div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sechead">
+      <div><p class="eyebrow">Послуги</p><h2>Від розуміння <em>до повного ведення</em></h2></div>
+      <p>Кожен наступний пакет включає попередні. Обирай, скільки підтримки тобі потрібно.</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <span class="n">01</span><h3>Strategy Start</h3>
+        <p class="for">Зрозумієш, що не так з профілем і як це виправити</p>
+        <div class="price">$89</div>
+        <ul>
+          <li>Аудит і розбір сторінки LinkedIn</li>
+          <li>Стратегія позиціонування</li>
+          <li>Упаковка профілю: шапка, headline, банер, about</li>
+          <li>Як працюють алгоритми LinkedIn і як це використати</li>
+        </ul>
+        <p class="res"><b>Консультація + рекомендації.</b> Знаєш, що і як міняти самостійно.</p>
+      </div>
+      <div class="plan">
+        <span class="n">02</span><h3>Content Plan</h3>
+        <p class="for">Готовий план контенту на квартал</p>
+        <div class="price">$150</div>
+        <ul>
+          <li class="inc">Все з пакету 01</li>
+          <li>Контент-стратегія</li>
+          <li>План розвитку на 3 місяці</li>
+          <li>Ідеї контенту під твою нішу та ЦА</li>
+        </ul>
+        <p class="res"><b>Консультація + файл зі стратегією.</b> Roadmap на 3 місяці без супроводу. Друга консультація +$40.</p>
+      </div>
+      <div class="plan rec">
+        <span class="badge">Рекомендую</span>
+        <span class="n">03</span><h3>Part-time Support</h3>
+        <p class="for">Впроваджуєш стратегію з моїм фідбеком</p>
+        <div class="price">$400</div>
+        <ul>
+          <li class="inc">Все з пакетів 01 і 02</li>
+          <li>Постійний зв'язок протягом місяця</li>
+          <li>Перевірка контенту перед публікацією: «ок / не ок» + правки</li>
+          <li>Супровід у впровадженні стратегії</li>
+        </ul>
+        <p class="res"><b>Консультація + файл + місяць підтримки.</b> Якісний контент з першого місяця і швидший ріст.</p>
+      </div>
+      <div class="plan">
+        <span class="n">04</span><h3>Done for You</h3>
+        <p class="for">LinkedIn під ключ, поки ти займаєшся бізнесом</p>
+        <div class="price">$700<small> / міс</small></div>
+        <ul>
+          <li>Ведення профілю та постинг</li>
+          <li>Робота з теплими лідами</li>
+          <li>Маркетинг і побудова воронок</li>
+        </ul>
+        <p class="res"><b>Щомісячна оплата.</b> LinkedIn працює як канал заявок.</p>
+      </div>
+    </div>
+    <div class="how">
+      <div><span class="st">Крок 1</span><b>Зустріч-знайомство <span class="free">безкоштовно</span></b>Вивчаємо твої потреби та цілі.</div>
+      <div><span class="st">Крок 2</span><b>Обираєш пакет</b>Пишеш мені в Telegram, Instagram або LinkedIn.</div>
+      <div><span class="st">Крок 3</span><b>Стартуємо</b>Консультація, файли та підтримка за пакетом.</div>
+      <div><span class="st">Оплата</span><b>Зручним способом</b><div class="pay"><span>PayPal</span><span>Wise</span><span>Українська карта</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="padding-top:0">
+  <div class="wrap about">
+    <div><p class="eyebrow">Про мене</p><h2>Привіт, я <em>Ганна</em></h2></div>
+    <div class="body">
+      <p><strong>LinkedIn-стратег і менеджерка бренд-комунікацій.</strong> 5+ років у контенті. Допомагаю фаундерам, експертам і EdTech-брендам вибудувати впізнаваність і перетворити LinkedIn на канал заявок.</p>
+      <p>Працювала з американською IT-школою, особистим брендом фаундерки AI-продукту та YouTube-каналом про подорожі. Засновниця <strong>NEST</strong>, ком'юніті для підприємців і фаундерів. Живу у Варшаві.</p>
+      <div class="langs"><span>Українська</span><span>English</span><span>Polski</span><span>Русский</span></div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Контакти</p>
+    <h2>Готові зробити LinkedIn <em>робочим каналом?</em></h2>
+    <div class="contacts">
+      <a class="contact" href="https://t.me/annroseone" target="_blank" rel="noopener">
+        <span class="l"><span class="ic tg"><svg viewBox="0 0 24 24"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2 1.8 11.7c-1-.3-1-1 .2-1.5L20.5 3.1c.9-.3 1.6.2 1.4 1.2z"/></svg></span>
+        <span><span class="nm">Telegram</span><br><span class="hd">@annroseone</span></span></span>
+        <svg class="ar" viewBox="0 0 16 16" fill="none" stroke-width="1.6"><path d="M4 12 12 4M5 4h7v7"/></svg>
+      </a>
+      <a class="contact" href="https://www.instagram.com/_annroseone/" target="_blank" rel="noopener">
+        <span class="l"><span class="ic ig"><svg viewBox="0 0 24 24"><path d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm4.9-8.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM12 3.6c2.7 0 3 0 4.1.1 2.7.1 4 1.4 4.1 4.1.1 1.1.1 1.4.1 4.1s0 3-.1 4.1c-.1 2.7-1.4 4-4.1 4.1-1.1.1-1.4.1-4.1.1s-3 0-4.1-.1c-2.7-.1-4-1.4-4.1-4.1-.1-1.1-.1-1.4-.1-4.1s0-3 .1-4.1c.1-2.7 1.4-4 4.1-4.1 1.1-.1 1.4-.1 4.1-.1zM12 2c-2.7 0-3.1 0-4.1.1-3.7.2-5.6 2.2-5.8 5.8C2 8.9 2 9.3 2 12s0 3.1.1 4.1c.2 3.6 2.2 5.6 5.8 5.8 1 .1 1.4.1 4.1.1s3.1 0 4.1-.1c3.6-.2 5.6-2.2 5.8-5.8.1-1 .1-1.4.1-4.1s0-3.1-.1-4.1c-.2-3.6-2.2-5.6-5.8-5.8C15.1 2 14.7 2 12 2z"/></svg></span>
+        <span><span class="nm">Instagram</span><br><span class="hd">@_annroseone</span></span></span>
+        <svg class="ar" viewBox="0 0 16 16" fill="none" stroke-width="1.6"><path d="M4 12 12 4M5 4h7v7"/></svg>
+      </a>
+      <a class="contact" href="https://www.linkedin.com/in/hanna-andrusenko-828929266/" target="_blank" rel="noopener">
+        <span class="l"><span class="ic lk"><svg viewBox="0 0 24 24"><path d="M6.9 8.9H3.5V20h3.4V8.9zM5.2 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM20.5 13.9c0-3-1.6-5.3-4.6-5.3-1.5 0-2.6.8-3 1.6V8.9H9.6V20H13v-5.5c0-1.5.3-2.9 2.1-2.9 1.8 0 1.8 1.7 1.8 3V20h3.4l.2-6.1z"/></svg></span>
+        <span><span class="nm">LinkedIn</span><br><span class="hd">Ганна Андрусенко</span></span></span>
+        <svg class="ar" viewBox="0 0 16 16" fill="none" stroke-width="1.6"><path d="M4 12 12 4M5 4h7v7"/></svg>
+      </a>
+    </div>
+    <div class="fbot"><span>© 2026 Ганна Андрусенко · LinkedIn-стратегія та контент</span><span>Варшава · працюю онлайн</span></div>
+    <div class="huge" aria-hidden="true">LinkedIn</div>
+  </div>
+</footer>
+
+</body>
+</html>
